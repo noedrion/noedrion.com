@@ -1,43 +1,349 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" data-lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noé's Website</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #0f172a;
-      color: #f8fafc;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: clamp(2rem, 6vw, 4rem);
-      font-weight: 700;
-    }
-
-    p {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      color: #94a3b8;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Noé Drion · Data Insight Consultant</title>
+<meta name="description" content="Noé Drion, consultant Data Insight. Power BI, Qlik Sense, TimeXtender, Talend, Microsoft Fabric." />
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main>
-    <h1>Noé's Website is Under Development</h1>
-    <p>Something exciting is coming soon.</p>
-  </main>
+
+<a class="skip-link" href="#main">Skip to content / Aller au contenu</a>
+
+<div class="spotlight" aria-hidden="true"></div>
+<div class="blobs" aria-hidden="true">
+  <span class="blob blob--cyan"></span>
+  <span class="blob blob--violet"></span>
+  <span class="blob blob--amber"></span>
+</div>
+
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top">ND</a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#about"><span class="lang-fr">À propos</span><span class="lang-en">About</span></a>
+      <a href="#experience"><span class="lang-fr">Expérience</span><span class="lang-en">Experience</span></a>
+      <a href="#skills"><span class="lang-fr">Compétences</span><span class="lang-en">Skills</span></a>
+      <a href="#education"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></a>
+      <a href="#contact"><span class="lang-fr">Contact</span><span class="lang-en">Contact</span></a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <span class="lang-switch__thumb" aria-hidden="true"></span>
+        <span class="lang-switch__label">FR</span>
+        <span class="lang-switch__label">EN</span>
+      </button>
+      <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">
+        <span class="lang-fr">Bonjour, je suis</span>
+        <span class="lang-en">Hi, I'm</span>
+      </p>
+      <h1 class="hero__name">Noé Drion</h1>
+      <p class="hero__role">
+        <span class="lang-fr">Consultant Data Insight</span>
+        <span class="lang-en">Data Insight Consultant</span>
+      </p>
+      <p class="hero__tagline">
+        <span class="lang-fr">Je transforme des données complexes en décisions claires.</span>
+        <span class="lang-en">I turn complex data into clear decisions.</span>
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#contact">
+          <span class="lang-fr">Me contacter</span>
+          <span class="lang-en">Get in touch</span>
+        </a>
+        <a class="btn btn--ghost" href="assets/cv/Noe-Drion-CV.pdf" download>
+          <span class="lang-fr">Télécharger le CV</span>
+          <span class="lang-en">Download CV</span>
+        </a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#about" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section__inner">
+      <p class="section__kicker">01</p>
+      <h2 class="section__title">
+        <span class="lang-fr">À propos</span>
+        <span class="lang-en">About</span>
+      </h2>
+      <p class="about__text lang-fr reveal">
+        Je suis consultant BI. J'ai une approche flexible et concrète de la donnée : migrations BI, modèles de
+        données historisés dans TimeXtender ou Talend, dashboards interactifs dans Power BI, Qlik Sense et
+        Looker Studio. J'utilise aussi Microsoft Fabric, les API REST, Python et le machine learning. J'aime
+        apprendre vite et m'adapter à chaque contexte, pour livrer des solutions qui collent vraiment aux
+        besoins du métier.
+      </p>
+      <p class="about__text lang-en reveal">
+        I'm a BI consultant. I take a flexible, hands-on approach to data: BI migrations, historized data
+        models in TimeXtender or Talend, interactive dashboards in Power BI, Qlik Sense and Looker Studio. I
+        also use Microsoft Fabric, REST APIs, Python and machine learning. I learn fast and adapt to any
+        context, to deliver solutions that truly fit business needs.
+      </p>
+
+      <div class="areas reveal">
+        <span class="area-chip">Finance</span>
+        <span class="area-chip"><span class="lang-fr">Secteur public</span><span class="lang-en">Public sector</span></span>
+        <span class="area-chip"><span class="lang-fr">Santé</span><span class="lang-en">Healthcare</span></span>
+        <span class="area-chip"><span class="lang-fr">Automobile</span><span class="lang-en">Automotive</span></span>
+        <span class="area-chip"><span class="lang-fr">Industrie</span><span class="lang-en">Industry</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="section__inner">
+      <p class="section__kicker">02</p>
+      <h2 class="section__title">
+        <span class="lang-fr">Expérience</span>
+        <span class="lang-en">Experience</span>
+      </h2>
+
+      <ol class="timeline">
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="tcard">
+            <p class="tcard__period">
+              <span class="lang-fr">Depuis 02/2026</span>
+              <span class="lang-en">Since 02/2026</span>
+            </p>
+            <h3 class="tcard__title">
+              <span class="lang-fr">Intégration de données</span>
+              <span class="lang-en">Data Integration</span>
+            </h3>
+            <p class="tcard__company">Toyota Motor Europe</p>
+            <p class="lang-fr">Intégration de données pour Toyota Motor Europe. Développement de flux ETL dans Talend, avec planification et logging pour fiabiliser le suivi.</p>
+            <p class="lang-en">Data integration for Toyota Motor Europe. ETL development in Talend, with scheduling and logging to keep data flows reliable.</p>
+            <div class="tcard__tags"><span>Talend</span><span>ETL</span></div>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="tcard">
+            <p class="tcard__period">
+              <span class="lang-fr">Depuis 11/2025</span>
+              <span class="lang-en">Since 11/2025</span>
+            </p>
+            <h3 class="tcard__title">
+              <span class="lang-fr">Migration Qlik vers TimeXtender</span>
+              <span class="lang-en">Qlik to TimeXtender Migration</span>
+            </h3>
+            <p class="tcard__company">Brussels Formation</p>
+            <p class="lang-fr">Migration de Qlik vers TimeXtender pour Brussels Formation. Modélisation des données avec historisation, pour garder l'historique intact dans les rapports existants.</p>
+            <p class="lang-en">Migration from Qlik to TimeXtender for Brussels Formation. Data modeling with historization, to keep existing reports' history intact.</p>
+            <div class="tcard__tags"><span>TimeXtender</span><span>Qlik Sense</span></div>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="tcard">
+            <p class="tcard__period">10/2025 – 01/2026</p>
+            <h3 class="tcard__title">
+              <span class="lang-fr">Suivi des tickets Jira</span>
+              <span class="lang-en">Jira Ticketing System</span>
+            </h3>
+            <p class="tcard__company">Brussels Fiscalité</p>
+            <p class="lang-fr">Suivi des tickets Jira pour Brussels Fiscalité, via l'API REST de Qlik Sense. Appels API adaptés lors de la migration de Jira vers sa nouvelle architecture.</p>
+            <p class="lang-en">Jira ticket tracking for Brussels Fiscalité, via the Qlik Sense REST API. API calls adapted when Jira migrated to its new architecture.</p>
+            <div class="tcard__tags"><span>Qlik Sense</span><span>REST API</span></div>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="tcard">
+            <p class="tcard__period">09/2025 – 11/2025</p>
+            <h3 class="tcard__title">
+              <span class="lang-fr">FAQ bilingue</span>
+              <span class="lang-en">Bilingual FAQ App</span>
+            </h3>
+            <p class="tcard__company">Brussels Fiscalité</p>
+            <p class="lang-fr">FAQ bilingue (FR/NL) pour Brussels Fiscalité. Rapport Qlik Sense avec writeback Vizzlib : les équipes mettent à jour le contenu directement depuis l'interface.</p>
+            <p class="lang-en">Bilingual FAQ (FR/NL) for Brussels Fiscalité. Qlik Sense report with Vizzlib writeback: teams update content straight from the interface.</p>
+            <div class="tcard__tags"><span>Qlik Sense</span><span>Vizzlib</span></div>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="tcard">
+            <p class="tcard__period">01/2025 – 06/2025</p>
+            <h3 class="tcard__title">
+              <span class="lang-fr">Stage · Consultant Data Insight</span>
+              <span class="lang-en">Internship · Data Insight Consultant</span>
+            </h3>
+            <p class="tcard__company">Pairi Daiza <span class="lang-fr">(via Agilos)</span><span class="lang-en">(via Agilos)</span></p>
+            <p class="lang-fr">Algorithme prédictif des flux de visiteurs et optimisation de la gestion des foules, avec des données croisées dans Microsoft Fabric. Modèles de machine learning testés selon plusieurs approches, résultats visualisés dans des rapports Power BI pour anticiper les pics d'affluence.</p>
+            <p class="lang-en">Predictive visitor flow algorithm and crowd management optimization, with data combined in Microsoft Fabric. Machine learning models tested across several approaches, results visualized in Power BI reports to anticipate peak attendance.</p>
+            <div class="tcard__tags"><span>Power BI</span><span>Fabric</span><span>Python</span><span>ML</span></div>
+          </div>
+        </li>
+
+        <li class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="tcard">
+            <p class="tcard__period">01/2022 – 03/2022</p>
+            <h3 class="tcard__title">
+              <span class="lang-fr">Stage · Data Visualisation</span>
+              <span class="lang-en">Internship · Data Visualization</span>
+            </h3>
+            <p class="tcard__company">Icare</p>
+            <p class="lang-fr">Nettoyage de données RH et création de rapports Looker Studio sur le bien-être des employés.</p>
+            <p class="lang-en">Cleaned HR data and built Looker Studio reports on employee well-being.</p>
+            <div class="tcard__tags"><span>Looker Studio</span></div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section__inner">
+      <p class="section__kicker">03</p>
+      <h2 class="section__title">
+        <span class="lang-fr">Compétences</span>
+        <span class="lang-en">Skills</span>
+      </h2>
+
+      <div class="skills-grid">
+        <div class="skills-col reveal">
+          <h3><span class="lang-fr">Outils</span><span class="lang-en">Tools</span></h3>
+          <div class="tag-cloud">
+            <span>Power BI</span><span>Microsoft Fabric</span><span>TimeXtender</span>
+            <span>Qlik Sense</span><span>Talend</span><span>Looker Studio</span>
+            <span>Python</span><span>SQL</span><span>DAX</span><span>Git</span>
+          </div>
+        </div>
+        <div class="skills-col reveal">
+          <h3><span class="lang-fr">Savoir-être</span><span class="lang-en">Personal skills</span></h3>
+          <div class="tag-cloud">
+            <span><span class="lang-fr">Adaptabilité</span><span class="lang-en">Adaptability</span></span>
+            <span><span class="lang-fr">Esprit d'analyse</span><span class="lang-en">Analytical thinking</span></span>
+            <span><span class="lang-fr">Esprit critique</span><span class="lang-en">Critical thinking</span></span>
+            <span><span class="lang-fr">Résolution de problèmes</span><span class="lang-en">Problem solving</span></span>
+            <span><span class="lang-fr">Communication</span><span class="lang-en">Communication</span></span>
+          </div>
+        </div>
+        <div class="skills-col reveal">
+          <h3><span class="lang-fr">Langues</span><span class="lang-en">Languages</span></h3>
+          <div class="tag-cloud">
+            <span><span class="lang-fr">Français — natif</span><span class="lang-en">French — native</span></span>
+            <span><span class="lang-fr">Anglais — courant</span><span class="lang-en">English — fluent</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <div class="section__inner">
+      <p class="section__kicker">04</p>
+      <h2 class="section__title">
+        <span class="lang-fr">Formation</span>
+        <span class="lang-en">Education</span>
+      </h2>
+
+      <div class="edu-grid">
+        <div class="edu-col reveal">
+          <h3><span class="lang-fr">Diplômes</span><span class="lang-en">Degrees</span></h3>
+          <ul class="edu-list">
+            <li>
+              <p class="edu-list__period">2023 – 2025</p>
+              <p class="edu-list__title"><span class="lang-fr">Master en Business Analytics</span><span class="lang-en">Master in Business Analytics</span></p>
+              <p class="edu-list__school">UCL FUCaM Mons</p>
+            </li>
+            <li>
+              <p class="edu-list__period">2020 – 2023</p>
+              <p class="edu-list__title"><span class="lang-fr">Bachelier en Ingénierie de gestion</span><span class="lang-en">Bachelor in Business Engineering</span></p>
+              <p class="edu-list__school">UCL FUCaM Mons</p>
+            </li>
+            <li>
+              <p class="edu-list__period">2020 – 2023</p>
+              <p class="edu-list__title"><span class="lang-fr">Bachelier en Ingénierie industrielle</span><span class="lang-en">Bachelor in Industrial Engineering</span></p>
+              <p class="edu-list__school">HELHA Mons</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="edu-col reveal">
+          <h3><span class="lang-fr">Certifications</span><span class="lang-en">Certifications</span></h3>
+          <ul class="edu-list">
+            <li>
+              <p class="edu-list__period">2026</p>
+              <p class="edu-list__title">Qlik Sense Data Architect</p>
+            </li>
+            <li>
+              <p class="edu-list__period">2026</p>
+              <p class="edu-list__title">TimeXtender · TX-200</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--contact" id="contact">
+    <div class="section__inner">
+      <p class="section__kicker">05</p>
+      <h2 class="section__title">
+        <span class="lang-fr">Discutons</span>
+        <span class="lang-en">Let's talk</span>
+      </h2>
+      <p class="contact__text reveal">
+        <span class="lang-fr">Une question, un projet data ? Écrivez-moi.</span>
+        <span class="lang-en">A question, a data project? Write to me.</span>
+      </p>
+
+      <div class="contact__grid reveal">
+        <a class="contact__card" href="mailto:noe_drion@yahoo.fr">
+          <span class="contact__label">Email</span>
+          <span class="contact__value">noe_drion@yahoo.fr</span>
+        </a>
+        <a class="contact__card" href="tel:+32470309551">
+          <span class="contact__label"><span class="lang-fr">Téléphone</span><span class="lang-en">Phone</span></span>
+          <span class="contact__value">+32 470 30 95 51</span>
+        </a>
+        <a class="contact__card" href="https://www.linkedin.com/in/noedrion/" target="_blank" rel="noopener noreferrer">
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">/in/noedrion</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Noé Drion.
+    <span class="lang-fr">Tous droits réservés.</span>
+    <span class="lang-en">All rights reserved.</span>
+  </p>
+</footer>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
