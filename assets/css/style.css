@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  overscroll-behavior-y: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -48,6 +49,7 @@ body {
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
+  overscroll-behavior-y: none;
 }
 
 ::selection {
@@ -181,10 +183,8 @@ html[data-lang="en"] .lang-fr { display: none; }
 
 /* ---------- Nav ---------- */
 .nav {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 100;
   background: rgba(6, 7, 13, 0.6);
   backdrop-filter: blur(14px);
@@ -357,11 +357,11 @@ html[data-lang="en"] .lang-switch__label:last-of-type {
 .hero {
   position: relative;
   z-index: 2;
-  min-height: 100vh;
+  min-height: calc(100vh - 66px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 1.5rem 4rem;
+  padding: 3rem 1.5rem 4rem;
 }
 
 .hero__inner {
@@ -443,6 +443,7 @@ html[data-lang="en"] .lang-switch__label:last-of-type {
   position: relative;
   z-index: 2;
   padding: 7rem 1.5rem;
+  scroll-margin-top: 66px;
 }
 
 .section__inner {
