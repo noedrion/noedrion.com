@@ -1,0 +1,2 @@
+# noedrion.com
+site cv
